@@ -1,38 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <section class="menu">
+    <section id="menu">
         <ul>
-            <li><a href="">O mnie</a></li>
-            <li><a href="">portfolio</a></li>
-            <li><a href="">Kontakt</a></li>
+            <li><a href="#o-mnie">O mnie</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
         </ul>
     </section>
 
-    <header>
-        <h1>Front End Developer</h1> 
-        <!-- dodać obrazek, ma zajmować całą powierzchnię elementu -->
+    <header id="naglowek">
+        <h1>Front End Developer</h1>
     </header>
 
-    <section class="o-mnie">
+    <section id="o-mnie">
         <h2>O mnie:</h2>
-        <!-- przykładowy tekst, wszystko wyśrodkowane -->
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, nihil harum fugit, amet suscipit sint
+            omnis animi quasi consequuntur eos error quod aut, similique ex illo soluta fugiat architecto enim.</p>
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio">
         <h2>Portfolio:</h2>
-        <!-- trzy obrazki jeden obok drugiego -->
+        <div class="image-container">
+            <img src="picture.jpg">
+            <img src="picture.jpg">
+            <img src="picture.jpg">
+        </div>
     </section>
 
-    <section class="kontakt">
+    <section id="kontakt">
         <h2>Kontakt:</h2>
-        <!-- dodaj form: imię, nazwisko, email, wiadomość, submit -->
+        <form>
+            <label for="imie">Imię:</label><br>
+            <input type="text" name="imie" id="imie"><br>
+            
+            <label for="nazwisko">Nazwisko:</label><br>
+            <input type="text" name="nazwisko" id="nazwisko"><br>
+            
+            <label for="mail">Adres e-mail:</label><br>
+            <input type="email" name="mail" id="mail"><br>
+            
+            <label for="wiadomosc">Wiadomość:</label><br>
+            <textarea name="wiadomosc" id="wiadomosc" cols="30" rows="10"></textarea><br>
+
+            <button type="submit">Wyślij</button>
+        </form>
     </section>
 </body>
+
 </html>
