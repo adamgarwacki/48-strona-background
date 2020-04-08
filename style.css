@@ -1,0 +1,95 @@
+body {
+    margin: 0px;
+}
+
+#menu {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 6em;
+
+    background-color: #cfcfcf;
+}
+
+li {
+    width: 25%;
+    height: 5em;
+    text-align: center;
+    background-color: #7c7c7c;
+    border-radius: 0px 0px 4px 4px;
+}
+
+a {
+    display: block;
+    width: 100%;
+    height: 3em;
+    padding-top: 2em;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+h2, h1 {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 10px;
+}
+
+#naglowek {
+    margin-top: 90px;
+    padding: 0px;
+    height: 80vh;
+
+    background-image: url(picture.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
+
+    color: #ffffff;
+}
+
+#o-mnie {
+    text-align: center;
+    padding: 20px;
+    background-color: #cfcfcf;
+}
+
+#portfolio {
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.image-container > img {
+    width: 30%;
+    height: 30%;
+}
+
+#kontakt {
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #cfcfcf;
+}
+
+input {
+    width: 30%;
+}
